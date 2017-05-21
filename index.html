@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="email=no"/>
+		<meta name="wap-font-scale" content="no"/>
+		<meta name="author" content="lsp" />
+		<title>砸金蛋抢思念红包</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<!--进度条-->
+		<section class="load-wrap" style="">
+			<section class="load">
+				<section class="load-bar">
+					<span class="counter"></span>
+					<div class="load-bar-inner"></div>
+				</section>
+			</section>
+		</section>
+		<!--主体内容-->
+		<section class="cnt">
+			<!--帘子-->
+			<section class="curtain-wrap" style="">
+				<section class="curtain curtain-l"></section>
+				<section class="curtain curtain-r"></section>
+			</section>
+			<!--规则-->
+			<section class="rules-wrap" style="">
+				 <section class="rules">
+					 <h3 class="tit">活动规则</h3>
+					 <div class="info">
+						<p>1.后台随机抢红包逻辑、红包池建立（已确认后台逻辑：概率、时间、区域可配置）</p>
+						<p>2.通过后台对活动门槛判、逻辑断后通过接口上传打印二维码/邀请码（在omp系统中设定活动商品范围，满足条件的信息下发到数字营销后台</p>
+						<p>3.用户通过扫描二维码或者输入邀请码进入活动页面，并获取相应的抢红包次数</p>
+						<p>4.获取用户门店信息对应抽不同的红包池</p>
+						<p>5.用户抢到的红包直接放入微信钱包（交易记录查询）</p>
+						<p>6.前端页面功能实现</p>
+					 </div>
+				 </section>
+				 <img src="images/cloud1.png" class="cloud cloud1"/>
+				 <img src="images/cloud2.png" class="cloud cloud2"/>
+				 <img src="images/cloud3.png" class="cloud cloud3"/>
+			</section>
+			<!--金蛋-->
+			<section class="eggs-wrap" style="">
+				<!--砸金蛋-->
+				<section class="hit-egg" style="">
+					<h3 class="tit">您有<span class="num">2</span>次砸金蛋机会</h3>
+					<div class="eggs">
+						<div class="wrap">
+							<div class="egg-shade">
+								<div class="egg">
+								<img src="images/red-enve.png" alt="" class="red-enve" style="display: none;"/>
+								<img src="images/egg1-bottom.png" alt="" class="egg-bottom" style=""/>
+								<img src="images/egg_left.png"  class="egg-part egg-left" />
+								<img src="images/egg_right.png" class="egg-part egg-right" />
+								<img src="images/lightning.png" alt="" class="lightning" style="display: none;"/>
+								</div>
+								<img src="images/egg2.png" class="egg2"/>
+								<img src="images/hammer.png" alt="" class="hammer" style="display: none;"/>
+							</div>
+							<div class="egg-shade">
+								<div class="egg">
+								<img src="images/red-enve.png" alt="" class="red-enve" style="display: none;"/>
+								<img src="images/egg1-bottom.png" alt="" class="egg-bottom" style=""/>
+								<img src="images/egg_left.png"  class="egg-part egg-left" />
+								<img src="images/egg_right.png" class="egg-part egg-right" />
+								<img src="images/lightning.png" alt="" class="lightning" style="display: none;"/>
+								</div>
+								<img src="images/egg2.png" class="egg2"/>
+								<img src="images/hammer.png" alt="" class="hammer" style="display: none;"/>
+							</div>
+							<div class="egg-shade">
+								<div class="egg">
+								<img src="images/red-enve.png" alt="" class="red-enve" style="display: none;"/>
+								<img src="images/egg1-bottom.png" alt="" class="egg-bottom" style=""/>
+								<img src="images/egg_left.png"  class="egg-part egg-left" />
+								<img src="images/egg_right.png" class="egg-part egg-right" />
+								<img src="images/lightning.png" alt="" class="lightning" style="display: none;"/>
+								</div>
+								<img src="images/egg2.png" class="egg2"/>
+								<img src="images/hammer.png" alt="" class="hammer" style="display: none;"/>
+							</div>
+							<img src="images/bg2.png" alt="" class="eggs-bottom"/>
+						</div>
+					</div>
+				</section>
+				<!--中奖纪录-->
+				<section class="award-record" style="display: none;">
+					<h3 class="tit">中奖纪录</h3>
+					<ul class="record">
+						<!--<li>第1次-------<span>500</span>元</li>
+						<li>第2次-------<span>100</span>元</li>
+						<li>第3次-------<span>20</span>元</li>
+						<li>第4次-------<span>0</span>元</li>
+						<li>第5次-------<span>5</span>元</li>-->
+					</ul>
+					<img src="images/bg2.png" alt="" class="eggs-bottom"/>
+				</section>
+				<a href="javascript:;" class="btn-record btn-award" style="">中奖纪录 > </a>
+				<a href="javascript:;" class="btn-record btn-continue" style="display: none;">< 继续砸蛋 </a>
+			</section>
+		</section>
+		<!--邀请码弹框-->
+		<section class="popup invite-popup" style="display: none;">
+			<div class="popup-cnt">
+				<h3 class="tit">邀请码验证</h3>
+				<div class="code-wrap">
+					<input type="text" placeholder="请输入邀请码"/>
+				</div>
+				<div class="btn-wrap clearfix">
+					<a href="javascript:;" class="btn btn-cancel fl">取消</a>
+					<a href="javascript:;" class="btn btn-confirm fr">确认</a>
+				</div>
+			</div>
+		</section>
+		<!--用户认证弹框-->
+		<section class="popup auth-popup" style="display: none;">
+			<div class="popup-cnt">
+				<h3 class="tit">用户认证</h3>
+				<div class="phone-wrap clearfix">
+					<input type="text" placeholder="请输入手机号" class="tel fl"/>
+					<a href="javascript:;" class="btn-code fr">发送验证码</a>
+				</div>
+				<div class="code-wrap">
+					<input type="text" placeholder="请输入验证码"/>
+				</div>
+				<div class="btn-wrap clearfix">
+					<a href="javascript:;" class="btn btn-cancel fl">取消</a>
+					<a href="javascript:;" class="btn btn-confirm fr">确认</a>
+				</div>
+			</div>
+		</section>
+		<!--未获奖弹框-->
+		<section class="popup no-award-popup popup-wrap" style="display: none;">
+			<section class="popup-cnt">
+				<h3 class="result">感谢参与</h3>
+				<p class="tips">也许下次幸运就会来临</p>
+			</section>
+		</section>
+		<!--获奖弹框-->
+		<section class="popup award-popup popup-wrap" style="display: none;">
+			<section class="popup-cnt">
+				<h3 class="result">5000.00元</h3>
+				<p class="tips">恭喜您获得红包</p>
+			</section>
+		</section>
+		<!--验证提示框-->
+		<section class="prompt"></section>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
